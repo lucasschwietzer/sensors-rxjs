@@ -5,7 +5,13 @@ import {
 import { sensorBService } from '../services';
 
 const SensorB = () => {
-  const sms = useMemo(() => ['Sensor B', 'Hello, Nicolas', 'This is Sensor B Test 1', 'This is Sensor B Test 2', 'This is Sensor B Test 3'], []);
+  const sms = useMemo(() => [
+    'Sensor B',
+    'Hello, Nicolas',
+    'This is Sensor B Test 1',
+    'This is Sensor B Test 2',
+    'This is Sensor B Test 3',
+  ], []);
   const [time, setTime] = useState(200);
   const sendMessage = (sms) => {
     sensorBService.sendMessage(sms);

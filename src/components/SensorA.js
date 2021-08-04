@@ -4,7 +4,13 @@ import {
 import { sensorAService } from '../services';
 
 const SensorA = () => {
-  const sms = useMemo(() => ['Sensor A', 'Hello, Nicolas', 'This is Sensor A Test 1', 'This is Sensor A Test 2', 'This is Sensor A Test 3'], []);
+  const sms = useMemo(() => [
+    'Sensor A',
+    'Hello, Nicolas',
+    'This is Sensor A Test 1',
+    'This is Sensor A Test 2',
+    'This is Sensor A Test 3',
+  ], []);
 
   const [time, setTime] = useState(200);
   const sendMessage = (sms) => {
